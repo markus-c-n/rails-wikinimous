@@ -1,0 +1,9 @@
+<div class="form-group">
+  <%= form_with model: @article do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class:'form-control m-3' %>
+    <%= f.label :content %>
+    <%= f.text_field :content, class:'form-control m-3' %>
+    <%= f.submit class:'btn btn-primary m-3' %>
+  <% end %>
+</div>
